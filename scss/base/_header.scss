@@ -1,0 +1,41 @@
+header{
+    background-color: white;
+    height: 150px;
+    
+    .image{
+            display: none;
+        }
+
+    .item-proyecto{
+        
+
+        nav{
+
+            h1{
+                .Titulo{
+                color: rgb(0, 0, 0);
+                text-align: center;
+                display: block;
+                
+                }
+
+            
+            }
+            ul{
+            display:flex;
+            justify-content: center;
+            gap: 30px;
+        
+            color: rgb(0, 0, 0);
+            list-style: none;
+
+            il{
+                a{
+                font-size: 20px;
+                color: rgb(0, 0, 0);
+                }
+            }
+            }
+        }
+    }
+}

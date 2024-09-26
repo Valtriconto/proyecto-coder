@@ -1,0 +1,154 @@
+.info-juego{
+    background:url(../M.g/Descuentos.jpeg) no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+    
+    h2{
+        color: black; animation-duration: 3s;
+        animation-name: slidein;
+    }
+
+    @keyframes slidein {
+        from{
+            margin-left: 100%;
+            width: 300%;
+        }
+
+        to{
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+}
+
+
+.juegos-tienda{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 2rem;
+        animation-duration: 3s;
+        animation-name: slidein;
+    }
+
+    
+    
+
+
+    div{
+        p{
+            a{
+                color: white;
+                font-size: 20px;
+                transition: background-color 1s;
+                background-color: rgb(52, 6, 128);
+                animation-duration: 3s;
+                animation-name:back ;
+            }
+
+            @keyframes back {
+                from{
+                    margin-top: 100%;
+                    width: 300%;
+                }
+
+                to{
+                    margin-top: 0%;
+                    width: 100%;
+                }
+            }
+                
+            
+
+            a:hover{
+                background-color: black;
+            }
+
+        }
+    }
+}
+
+
+@media (max-width: 759px) {
+
+    .imagen-plataformas{
+     display: none;
+    }
+    .imagen-play{
+     display: none;
+    }
+ 
+ 
+ 
+     main .item-S{
+         display: none;
+     }
+ 
+     .item-R{
+         display: none;
+     }
+     
+ }
+ 
+ @media (min-width: 760px) and (max-width: 1023px){
+ 
+     .imagen-play{
+         display: none;
+     }
+ 
+ 
+     .imagen-juegos{
+        
+         width: 50%;
+     }
+ 
+     .imagen-plataformas{
+         display: contents;
+         
+     }
+ 
+ 
+     main {
+        margin: 5px 30px;
+     }
+ 
+     .juegos-tienda{
+         gap: 30px;
+         flex-wrap: nowrap;
+         flex-direction: column;
+        
+     }    
+ 
+     .item-R{
+         display: none;
+     }
+ 
+     
+ }
+ 
+ 
+ @media (min-width: 1024px){
+ 
+     main {
+         margin: 5px 30px;
+      }
+ 
+     .juegos-tienda{
+ 
+         gap: 30px;
+ 
+         
+        
+     }
+ 
+     
+        
+ }

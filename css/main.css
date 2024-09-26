@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../img/galaxia.jpeg) no-repeat center center;
+  background-size: cover;
+}
+
+main {
+  background: url(../../img/fondo-de-galaxia.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+header {
+  background-color: white;
+  height: 150px;
+}
+header .image {
+  display: none;
+}
+header .item-proyecto nav h1 .Titulo {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  display: block;
+}
+header .item-proyecto nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  color: rgb(0, 0, 0);
+  list-style: none;
+}
+header .item-proyecto nav ul il a {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+main {
+  background-color: rgb(45, 2, 114);
+}
+main .main-menu {
+  background-color: rgb(245, 241, 241);
+  padding: 10px;
+}
+main h2 {
+  text-align: center;
+  font-size: 50px;
+}
+main .segundo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+main .segundo p {
+  display: flex;
+  font-size: 20px;
+  text-align: center;
+}
+main iframe {
+  width: 90%;
+  padding-left: 50px;
+}
+main .Boton {
+  display: inline;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.info-juego {
+  background: url(../M.g/Descuentos.jpeg) no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 30px;
+}
+.info-juego h2 {
+  color: black;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.juegos-tienda {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+.juegos-tienda img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+.juegos-tienda div p a {
+  color: white;
+  font-size: 20px;
+  transition: background-color 1s;
+  background-color: rgb(52, 6, 128);
+  animation-duration: 3s;
+  animation-name: back;
+}
+@keyframes back {
+  from {
+    margin-top: 100%;
+    width: 300%;
+  }
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
+}
+.juegos-tienda div p a:hover {
+  background-color: black;
+}
+
+@media (max-width: 759px) {
+  .imagen-plataformas {
+    display: none;
+  }
+  .imagen-play {
+    display: none;
+  }
+  main .item-S {
+    display: none;
+  }
+  .item-R {
+    display: none;
+  }
+}
+@media (min-width: 760px) and (max-width: 1023px) {
+  .imagen-play {
+    display: none;
+  }
+  .imagen-juegos {
+    width: 50%;
+  }
+  .imagen-plataformas {
+    display: contents;
+  }
+  main {
+    margin: 5px 30px;
+  }
+  .juegos-tienda {
+    gap: 30px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .item-R {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  main {
+    margin: 5px 30px;
+  }
+  .juegos-tienda {
+    gap: 30px;
+  }
+}
+.Solicitud h2 {
+  color: white;
+}
+
+.Ayudita {
+  margin-top: 20px;
+  margin-left: 100px;
+  display: inline;
+  color: aliceblue;
+}
+.Ayudita h3 {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  font-size: 30px;
+  background-color: rgb(41, 6, 6);
+}
+
+.Nosotros-sitio {
+  text-align: center;
+  color: antiquewhite;
+}
+.Nosotros-sitio .Titulo {
+  font-size: 50px;
+  background-color: rgb(71, 12, 10);
+}
+.Nosotros-sitio div {
+  margin: 100px;
+}
+.Nosotros-sitio div .Mapa {
+  font-size: 60px;
+}
+.Nosotros-sitio div div .Quien {
+  font-size: 50px;
+  padding: 100px;
+}
+.Nosotros-sitio div .Objetivos {
+  font-size: 50px;
+  padding: 30px;
+  margin-top: 100px;
+}
+
+/*# sourceMappingURL=main.css.map */
